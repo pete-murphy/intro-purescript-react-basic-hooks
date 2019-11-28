@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+main {
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-emoji {
+  font-size: 50vmin;
+}
+
+.overlap-spans {
+  span {
+    font-weight: 900;
+    grid-column: 1 / -1;
+    grid-row: 1 / -1;
+  }
+}

@@ -1,12 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+// import { jsApp } from "./output/Example1.App";
+// import { jsApp } from "./output/Example2.App";
+// import { jsApp } from "./output/Example3.App";
+// import { jsApp } from "./output/Example4.App";
+// import { jsApp } from "./output/Example5.App";
+// import { mkJsApp } from "./output/Example6.App";
+import { mkJsApp } from "./output/Example7.App";
+import "./index.scss";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+/**
+ * You can set `App` to `jsApp` to see the first few examples
+ * For examples after Example5, a `mkJsApp` is exported, which
+ * must be called (it is an "effect").
+ */
+// const App = jsApp;
+const App = mkJsApp();
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDOM.render(<App />, document.getElementById("root"));
